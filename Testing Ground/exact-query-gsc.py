@@ -18,10 +18,10 @@ def authenticate(config='client_secrets.json', token='credentials.json'):
 
 account = authenticate(config=creds)
 
-site = 'https://whenopportunityknox.co.uk/'
+site = 'site.com/'
 months = -5
 
-webproperty = account['https://whenopportunityknox.co.uk/']
+webproperty = account['https://site.com/']
 report = webproperty.query \
     .range('today', months=months) \
     .dimension('page', 'query') \
@@ -30,5 +30,4 @@ report = webproperty.query \
 df = report.to_dataframe()
 df.head()
 
-print(report)
 
