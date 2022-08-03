@@ -4,7 +4,7 @@ import pandas as pd
 
 import searchconsole
 
-creds = 'client-secrets.json.json'
+creds = 'filesecretshere.json'
 1
 def authenticate(config='client_secrets.json', token='credentials.json'):
     """Authenticate GSC"""
